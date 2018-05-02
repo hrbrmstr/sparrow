@@ -1,0 +1,28 @@
+Package: sparrow
+Type: Package
+Title: Temporary Shorcut For Reading Arrow/Parquet Bit Into R via 'reticulate'
+Version: 0.1.0
+Date: 2018-05-02
+Authors@R: c(
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0001-5670-2640"))
+  )
+Maintainer: Bob Rudis <bob@rud.is>
+Description: Work is being done to make Parquet/Arrow a first-class R citizen
+    but -- until then -- I don't always want a Drill server round trip just
+    to read in some data and same goes for firing up a Spark instance (srsly). 
+    So, this is a quick hack until the R packages are done.
+URL: https://github.com/hrbrmstr/sparrow
+BugReports: https://github.com/hrbrmstr/sparrow/issues
+Encoding: UTF-8
+License: AGPL
+Suggests:
+    testthat,
+    covr
+Depends:
+    R (>= 3.2.0),
+    reticulate
+Imports:
+    dplyr,
+    magrittr
+RoxygenNote: 6.0.1.9000
